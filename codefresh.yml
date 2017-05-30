@@ -5,10 +5,12 @@ steps:
     type: build
     dockerfile: Dockerfile.dev
     image-name: demochatnode
+    no_cache: true
     tag: dev
 
   build_step:
     type: build
     dockerfile: Dockerfile
     image-name: demochat
+    no_cache: true
     tag: ${{CF_BRANCH}}
